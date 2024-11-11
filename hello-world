@@ -1,2 +1,15 @@
-hello world
-something
+def product(arr):
+  array1=[]
+  array2=[]
+  for i in range(len(arr)):
+    array1.append(arr[i])
+
+  for i in range(len(arr)):
+    mul=1
+    for j in range(len(arr)):
+      if i!=j:
+        mul*=arr[j]
+    array2.append(mul)
+  return array2
+
+print(product([2,2,2,2]))
